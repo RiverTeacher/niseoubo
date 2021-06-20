@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>おめでとうございます！</title>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="60; URL=new.html">
+<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+<style>
+
+body {
+
+    background-color: lightgreen;
+    }
+
+    div {
+  background: #ffffff;
+  width: 1000px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #F00;
+  margin: 30px auto;
+}
+</style>
+</head>
+<body lang="ja">
+    <audio autoplay>
+       <source src="tada2.mp3" type="audio/mp3">
+    </audio>
+<div>
+    <h1><font color="red">おめでとう！見事当選しました！</font></font></h1>
+    <h3>次のフォームからプレゼントの配送手続きを進めてください！</h3>
+    <h5>フォームには有効期限がございます</h5>
+    <p class="flow-text"><font color="red"><span id="timer" style="font-size: 2em;"></span></font>秒でリンクの有効期限が切れます</p>
+    <a href="index5.html" class="btn btn-laege">応募フォーム</a>
+</div><br>
+<span>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+var time = 60;
+        setInterval(function(){
+          time--;
+          $('#timer').text(time);
+        }, 1000);
+    　
+</script>
+
+</span>>
+</body>
+</html>
